@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello_first_fragment">Bienvenido a Ludis</string>
+    <string name="login"><b><u>Iniciar sesión</u></b></string>
+    <string name="registro"><b>Registrarse</b></string>
+    <string name="mail">Correo electrónico</string>
+    <string name="pass">Contraseña</string>
+    <string name="cuenta">¿Aún no tienes una cuenta? <u>Registrate aquí</u></string>
+    <string name="Name">Nombre</string>
+    <string name="lastName">Apellidos</string>
+    <string name="genero">Género</string>
+    <string name="male">Hombre</string>
+    <string name="female">Mujer</string>
+    <string name="other">Otro</string>
+    <string name="rpassword">Repite la contraseña</string>
+    <string name="rBirthday">Fecha de nacimiento</string>
+    <string name="regFields">Por favor, introduzca los siguientes datos</string>
+    <string name="Regis"><u>Registrar</u></string>
+    <string name="previous"><u>Volver</u></string>
+    <string name="football">Fútbol</string>
+    <string name="basketball">Baloncesto</string>
+    <string name="tennis">Tenis</string>
+    <string name="padel">Pádel</string>
+    <string name="next"><u>Siguiente</u></string>
+    <string name="user">Nombre de usuario</string>
+    <string name="senderismo">Senderismo</string>
+    <string name="volley">Volley</string>
+    <string name="profile">Mi perfil</string>
+    <string name="Ajustes">Opciones</string>
+    <string name="registroAlerta">Por favor, rellena todos los campos</string>
+    <string name="error">Error</string>
+    <string name="usershort">Seleccione un nombre de usuario de al menos 8 caracteres</string>
+    <string name="passshort">Seleccione una contraseña de al menos 8 caracteres</string>
+    <string name="emailvalid">Por favor, proporcione un email válido</string>
+    <string name="alertPasswords">Las contraseñas deben coincidir</string>
+    <string name="Actividades">Actividades</string>
+    <string name="alertChoice">¿Que deseas hacer?</string>
+    <string name="create">Crear</string>
+    <string name="find">Buscar</string>
+</resources>

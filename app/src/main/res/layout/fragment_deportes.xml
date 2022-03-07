@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#60AA9B"
+    tools:context=".Deportes"
+    tools:ignore="SpeakableTextPresentCheck">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageIcono"
+            android:layout_width="123dp"
+            android:layout_height="123dp"
+            android:src="@drawable/balon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.184" />
+
+        <ImageView
+            android:id="@+id/imageBaloncesto"
+            android:layout_width="123dp"
+            android:layout_height="123dp"
+            android:layout_marginStart="80dp"
+            android:src="@drawable/baloncesto"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.75"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageIcono" />
+
+        <ImageView
+            android:id="@+id/imageTenis"
+            android:layout_width="123dp"
+            android:layout_height="123dp"
+
+            android:layout_marginTop="52dp"
+            android:src="@drawable/raqueta_de_tenis"
+            app:layout_constraintEnd_toEndOf="@+id/imageIcono"
+            app:layout_constraintStart_toStartOf="@+id/imageIcono"
+            app:layout_constraintTop_toBottomOf="@+id/imageIcono" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="top"
+            tools:layout_editor_absoluteX="126dp"
+            tools:layout_editor_absoluteY="360dp" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="left"
+            tools:layout_editor_absoluteX="234dp"
+            tools:layout_editor_absoluteY="7dp" />
+
+        <ImageView
+            android:id="@+id/imagePadel"
+            android:layout_width="123dp"
+            android:layout_height="123dp"
+            android:src="@drawable/padel"
+            app:layout_constraintEnd_toEndOf="@+id/imageBaloncesto"
+            app:layout_constraintStart_toStartOf="@+id/imageBaloncesto"
+            app:layout_constraintTop_toTopOf="@+id/imageTenis" />
+
+        <TextView
+            android:id="@+id/textFutbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/football"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/imageIcono"
+            app:layout_constraintStart_toStartOf="@+id/imageIcono"
+            app:layout_constraintTop_toBottomOf="@+id/imageIcono" />
+
+        <TextView
+            android:id="@+id/textBaloncesto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/basketball"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/imageBaloncesto"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/imageBaloncesto"
+            app:layout_constraintTop_toBottomOf="@+id/imageBaloncesto" />
+
+        <TextView
+            android:id="@+id/textTenis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tennis"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/imageTenis"
+            app:layout_constraintStart_toStartOf="@+id/imageTenis"
+            app:layout_constraintTop_toBottomOf="@+id/imageTenis" />
+
+        <TextView
+            android:id="@+id/textPadel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/padel"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/imagePadel"
+            app:layout_constraintStart_toStartOf="@+id/imagePadel"
+            app:layout_constraintTop_toBottomOf="@+id/imagePadel" />
+
+        <ImageView
+            android:id="@+id/imageRunning"
+            android:layout_width="123dp"
+            android:layout_height="123dp"
+            android:layout_marginTop="52dp"
+            android:src="@drawable/running_stick_figure"
+            app:layout_constraintEnd_toEndOf="@+id/imageTenis"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/imageTenis"
+            app:layout_constraintTop_toBottomOf="@+id/imageTenis" />
+
+        <ImageView
+            android:id="@+id/imageSenderismo"
+            android:layout_width="123dp"
+            android:layout_height="123dp"
+            android:layout_marginTop="52dp"
+            android:src="@drawable/senderismo"
+            app:layout_constraintEnd_toEndOf="@+id/imagePadel"
+            app:layout_constraintStart_toStartOf="@+id/imagePadel"
+            app:layout_constraintTop_toBottomOf="@+id/imagePadel" />
+
+        <ImageView
+            android:id="@+id/imageVolley"
+            android:layout_width="123dp"
+            android:layout_height="123dp"
+            android:layout_marginTop="52dp"
+            android:src="@drawable/volleyball"
+            app:layout_constraintEnd_toEndOf="@+id/imageRunning"
+            app:layout_constraintStart_toStartOf="@+id/imageRunning"
+            app:layout_constraintTop_toBottomOf="@+id/imageRunning" />
+
+        <TextView
+            android:id="@+id/textRunning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/running"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/imageRunning"
+            app:layout_constraintStart_toStartOf="@+id/imageRunning"
+            app:layout_constraintTop_toBottomOf="@+id/imageRunning" />
+        <TextView
+            android:id="@+id/textVolley"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/volley"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/imageVolley"
+            app:layout_constraintStart_toStartOf="@+id/imageVolley"
+            app:layout_constraintTop_toBottomOf="@+id/imageVolley" />
+        <TextView
+            android:id="@+id/textSenderismo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/senderismo"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/imageSenderismo"
+            app:layout_constraintStart_toStartOf="@+id/imageSenderismo"
+            app:layout_constraintTop_toBottomOf="@+id/imageSenderismo" />
+
+        <Button
+            android:id="@+id/buttonFurbo"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="123dp"
+            android:layout_height="150dp"
+            app:layout_constraintBottom_toTopOf="@+id/textFutbol"
+            app:layout_constraintEnd_toEndOf="@+id/imageIcono"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imageIcono"
+            app:layout_constraintTop_toTopOf="@+id/imageIcono"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

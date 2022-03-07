@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name" translatable="false">Ludis</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next"><u>Next</u></string>
+    <string name="previous"><u>Back</u></string>
+
+    <string name="hello_first_fragment">Welcome to Ludis</string>
+    <string name="login"><b><u>Log in</u></b></string>
+    <string name="registro"><b><u>Sing up</u></b></string>
+    <string name="mail">Email</string>
+    <string name="pass">Password</string>
+    <string name="cuenta">Don\'t you have an account? <u>Register now!</u></string>
+    <string name="Name">First Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="genero">Gender</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="other">Other</string>
+    <string name="rpassword">Repeat password</string>
+    <string name="rBirthday">Date of birth</string>
+    <string name="regFields">Please, fill the following fields</string>
+    <string name="Regis"><u>Sing up</u> </string>
+    <string name="football">Football</string>
+    <string name="basketball">Basketball</string>
+    <string name="tennis">Tennis</string>
+    <string name="padel">Padel</string>
+    <string name="user">Username</string>
+    <string name="running" translatable="false">Running</string>
+    <string name="senderismo">Trekking</string>
+    <string name="volley">Volley</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="profile">My profile</string>
+    <string name="social" translatable="false">Social</string>
+    <string name="Ajustes">Options</string>
+    <string name="Actividades">Activities</string>
+    <string name="registroAlerta">Please fill all the fields</string>
+    <string name="error">Failure</string>
+    <string name="usershort">Select a username with at least 8 characters</string>
+    <string name="passshort">Select a password with at least 8 characters</string>
+    <string name="emailvalid">Please select a valid e-mail</string>
+    <string name="alertPasswords">The passwords must match</string>
+    <string name="alertChoice">What do you want to do?</string>
+    <string name="create">Create</string>
+    <string name="find">Find</string>
+</resources>
