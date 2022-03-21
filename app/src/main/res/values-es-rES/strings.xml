@@ -37,4 +37,5 @@
     <string name="alertChoice">¿Que deseas hacer?</string>
     <string name="create">Crear</string>
     <string name="find">Buscar</string>
+    <string name="back">Retroceder</string>
 </resources>

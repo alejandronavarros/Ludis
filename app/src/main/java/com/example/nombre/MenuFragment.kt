@@ -1,7 +1,5 @@
 package com.example.nombre
 
-import android.app.AlertDialog
-import android.content.DialogInterface
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -35,38 +33,31 @@ class MenuFragment : Fragment() {
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        if(UserActual.getUser()==null){
-            UserActual.setUser(UsuarioNormal("usuario","nombre","mail@mail.com",Genero.Hombre,Date(2000,1,1)))
+        if (Global.getUser() == null) {
+            Global.setUser(
+                UsuarioNormal(
+                    "usuario",
+                    "nombre",
+                    "mail@mail.com",
+                    Genero.Hombre,
+                    Date(2000, 1, 1)
+                )
+            )
             //UserActual.getUser().addNotificacion(Notificacion(0,UserActual.getUser()))
         }
-        if(UserActual.getUser().notificaciones.isEmpty()){
+        if (Global.getUser().notificaciones.isEmpty()) {
             binding.imageNoti.visibility = View.INVISIBLE
             binding.textNoti.text = ""
-        }else{
-            if (UserActual.getUser().notificaciones.size >9){
+        } else {
+            if (Global.getUser().notificaciones.size > 9) {
                 binding.textNoti.text = "9+"
-            }else
-            binding.textNoti.text = UserActual.getUser().notificaciones.size.toString()
+            } else
+                binding.textNoti.text = Global.getUser().notificaciones.size.toString()
         }
-        binding.imageActividades.setOnClickListener{
-            val builder: AlertDialog.Builder? = activity?.let {
-                AlertDialog.Builder(it)
-            }
-            builder?.setMessage(R.string.alertChoice)
-                ?.setNegativeButton(R.string.create, null)
-                ?.setPositiveButton(R.string.find, DialogInterface.OnClickListener()
-
-                )
-
-            val dialog: AlertDialog? = builder?.create()
-            dialog?.show()
+        binding.imageActividades.setOnClickListener {
+            findNavController().navigate(R.id.action_menuFragment_to_deportes)
         }
     }
-
-    fun MyClickListener() =
-        DialogInterface.OnClickListener {
-            print("hello")
-        }
 
     override fun onDestroyView() {
         super.onDestroyView()

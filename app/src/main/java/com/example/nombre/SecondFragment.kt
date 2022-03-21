@@ -1,7 +1,6 @@
 package com.example.nombre
 
 import DatePickerFragment
-import android.app.AlertDialog
 import android.os.Bundle
 import android.text.method.HideReturnsTransformationMethod
 import android.text.method.PasswordTransformationMethod
@@ -13,10 +12,9 @@ import android.widget.EditText
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.example.nombre.clases.Genero
-import com.example.nombre.clases.UserActual
+import com.example.nombre.clases.Global
 import com.example.nombre.clases.UsuarioNormal
 import com.example.nombre.databinding.FragmentRegistroBinding
-import com.example.nombre.Controlador
 
 import java.util.*
 
@@ -58,7 +56,7 @@ class Register : Fragment() {
                     getGender(genero),
                     Date(date[2].toInt(),date[1].toInt(),date[0].toInt())
                 )
-                UserActual.setUser(user)
+                Global.setUser(user)
                 findNavController().navigate(R.id.action_Register_to_menuFragment)
             }
 

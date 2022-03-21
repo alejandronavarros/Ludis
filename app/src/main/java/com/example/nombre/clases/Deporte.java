@@ -1,16 +1,7 @@
 package com.example.nombre.clases;
 
-public class Deporte {
-    String nombre;
-    public Deporte(String nombre){
-        this.nombre = nombre;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
+public enum Deporte {
+    Futbol7, Futbol11, FutbolSala, Futbol5, Futbol3, Volleybol, VolleyPlaya,
+    Baloncesto, Tenis, Padel, Trekking, Running, Ciclismo, Natacion, Badminton, Waterpolo,
+    Balonmano, Calistenia, Paseo
 }
