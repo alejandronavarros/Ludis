@@ -31,7 +31,6 @@ class LogIn : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        //binding.buttonReg.text = Html.escapeHtml(getString(R.string.cuenta))
         binding.buttonReg.setOnClickListener {
             findNavController().navigate(R.id.action_Log_to_Reg)
         }

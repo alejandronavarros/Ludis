@@ -11,6 +11,7 @@ import android.view.ViewGroup
 import android.widget.EditText
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.example.nombre.clases.Controlador
 import com.example.nombre.clases.Genero
 import com.example.nombre.clases.Global
 import com.example.nombre.clases.UsuarioNormal

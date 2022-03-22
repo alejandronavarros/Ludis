@@ -187,6 +187,104 @@
             app:layout_constraintStart_toStartOf="@+id/imageIcono"
             app:layout_constraintTop_toTopOf="@+id/imageIcono"
             app:layout_constraintVertical_bias="0.0" />
-
+        <Button
+            android:id="@+id/buttonSenderismo"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="123dp"
+            android:layout_height="150dp"
+            app:layout_constraintBottom_toTopOf="@+id/textSenderismo"
+            app:layout_constraintEnd_toEndOf="@+id/imageSenderismo"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imageSenderismo"
+            app:layout_constraintTop_toTopOf="@+id/imageSenderismo"
+            app:layout_constraintVertical_bias="0.0" />
+        <Button
+            android:id="@+id/buttonVolley"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="123dp"
+            android:layout_height="150dp"
+            app:layout_constraintBottom_toTopOf="@+id/textVolley"
+            app:layout_constraintEnd_toEndOf="@+id/imageVolley"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imageVolley"
+            app:layout_constraintTop_toTopOf="@+id/imageVolley"
+            app:layout_constraintVertical_bias="0.0" />
+        <Button
+            android:id="@+id/buttonPadel"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="123dp"
+            android:layout_height="150dp"
+            app:layout_constraintBottom_toTopOf="@+id/textPadel"
+            app:layout_constraintEnd_toEndOf="@+id/imagePadel"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imagePadel"
+            app:layout_constraintTop_toTopOf="@+id/imagePadel"
+            app:layout_constraintVertical_bias="0.0" />
+        <Button
+            android:id="@+id/buttonBasket"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="123dp"
+            android:layout_height="150dp"
+            app:layout_constraintBottom_toTopOf="@+id/textBaloncesto"
+            app:layout_constraintEnd_toEndOf="@+id/imageBaloncesto"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imageBaloncesto"
+            app:layout_constraintTop_toTopOf="@+id/imageBaloncesto"
+            app:layout_constraintVertical_bias="0.0" />
+        <Button
+            android:id="@+id/buttonTennis"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="123dp"
+            android:layout_height="150dp"
+            app:layout_constraintBottom_toTopOf="@+id/textTenis"
+            app:layout_constraintEnd_toEndOf="@+id/imageTenis"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imageTenis"
+            app:layout_constraintTop_toTopOf="@+id/imageTenis"
+            app:layout_constraintVertical_bias="0.0" />
+        <Button
+            android:id="@+id/buttonRunnning"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="123dp"
+            android:layout_height="150dp"
+            app:layout_constraintBottom_toTopOf="@+id/textRunning"
+            app:layout_constraintEnd_toEndOf="@+id/imageRunning"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imageRunning"
+            app:layout_constraintTop_toTopOf="@+id/imageRunning"
+            app:layout_constraintVertical_bias="0.0" />
+        <!--<Button
+            android:id="@+id/buttonFurbo"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="123dp"
+            android:layout_height="150dp"
+            app:layout_constraintBottom_toTopOf="@+id/textFutbol"
+            app:layout_constraintEnd_toEndOf="@+id/imageIcono"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imageIcono"
+            app:layout_constraintTop_toTopOf="@+id/imageIcono"
+            app:layout_constraintVertical_bias="0.0" />
+        <Button
+            android:id="@+id/buttonFurbo"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="123dp"
+            android:layout_height="150dp"
+            app:layout_constraintBottom_toTopOf="@+id/textFutbol"
+            app:layout_constraintEnd_toEndOf="@+id/imageIcono"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imageIcono"
+            app:layout_constraintTop_toTopOf="@+id/imageIcono"
+            app:layout_constraintVertical_bias="0.0" />
+        <Button
+            android:id="@+id/buttonFurbo"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="123dp"
+            android:layout_height="150dp"
+            app:layout_constraintBottom_toTopOf="@+id/textFutbol"
+            app:layout_constraintEnd_toEndOf="@+id/imageIcono"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imageIcono"
+            app:layout_constraintTop_toTopOf="@+id/imageIcono"
+            app:layout_constraintVertical_bias="0.0" />-->
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>
