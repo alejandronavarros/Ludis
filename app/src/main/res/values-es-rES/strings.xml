@@ -38,4 +38,29 @@
     <string name="create">Crear</string>
     <string name="find">Buscar</string>
     <string name="back">Retroceder</string>
+    <string name="ssport">Categoría</string>
+    <string-array name="footballDisplay">
+        <item>Fútbol 3</item>
+        <item>Fútbol 5</item>
+        <item>Fútbol 7</item>
+        <item>Fútbol 8</item>
+        <item>Fútbol 11</item>
+        <item>Fútbol playa</item>
+        <item>Fútbol sala</item>
+    </string-array>
+    <string-array name="volleyDisplay">
+        <item>Volley playa</item>
+        <item>Voleybol</item>
+    </string-array>
+    <string-array name="basketDisplay">
+        <item>Basket 1vs1</item>
+        <item>Basket 3</item>
+        <item>Basket 5</item>
+    </string-array>
+    <string-array name="hockeyDisplay">
+        <item>Hockey hielo</item>
+        <item>Hockey hierba</item>
+        <item>Hockey patines </item>
+    </string-array>
+    <string name="confirm">Aceptar</string>
 </resources>

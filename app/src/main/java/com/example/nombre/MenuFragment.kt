@@ -1,5 +1,6 @@
 package com.example.nombre
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -54,8 +55,14 @@ class MenuFragment : Fragment() {
             } else
                 binding.textNoti.text = Global.getUser().notificaciones.size.toString()
         }
+
+
         binding.imageActividades.setOnClickListener {
             findNavController().navigate(R.id.action_menuFragment_to_deportes)
+        }
+        binding.imageSocial.setOnClickListener {
+            val intent = Intent(context , MapsActivity::class.java)
+            startActivity(intent)
         }
     }
 
