@@ -2,6 +2,7 @@ package com.example.nombre
 
 import android.app.AlertDialog
 import android.content.DialogInterface
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -23,14 +24,14 @@ class Deportes : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentDeportesBinding.inflate(inflater, container, false)
         return binding.root
     }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.buttonFurbo.setOnClickListener {
-            setDialog(Deporte.Futbol11)
+            setDialog(Deporte.Futbol)
         }
         binding.buttonBasket.setOnClickListener {
             setDialog(Deporte.Baloncesto)
@@ -54,23 +55,22 @@ class Deportes : Fragment() {
 
 
     }
-    fun setDialog(deporte: Deporte){
+    private fun setDialog(deporte: Deporte){
         val builder: AlertDialog.Builder = activity.let {
             AlertDialog.Builder(it)
         }
         builder.setMessage(R.string.alertChoice)
             .setNegativeButton(R.string.back, null)
-            .setPositiveButton(R.string.find,  DialogInterface.OnClickListener {
-                    dialog, id-> Global.setDep(deporte)
+            .setPositiveButton(R.string.find) { _, _ ->
+                Global.setDep(deporte)
                 findNavController().navigate(R.id.action_deportes_to_searchActivityFragment)
-            })
-            .setNeutralButton(R.string.create, DialogInterface.OnClickListener {
-                dialog, id -> Global.setDep(deporte)
-                findNavController().navigate(R.id.action_deportes_to_createActivityFragment)})
+            }
+            .setNeutralButton(R.string.create) { _, _ ->
+                Global.setDep(deporte)
+                val intent = Intent(context , ActivityCreateEvent::class.java)
+                startActivity(intent)
+            }
         val dialog = builder.create()
         dialog.show()
-    }
-    fun handleClick() {
-
     }
 }

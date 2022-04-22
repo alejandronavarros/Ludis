@@ -62,5 +62,16 @@
         <item>Hockey hierba</item>
         <item>Hockey patines </item>
     </string-array>
+    <string-array name="placeholder">
+        <item>PlaceHolder</item>
+    </string-array>
     <string name="confirm">Aceptar</string>
+    <string name="price">Precio</string>
+    <string name="Date">Fecha</string>
+    <string name="Time">Hora</string>
+    <string name="Players">Jugadores</string>
+    <string name="location">Localización</string>
+    <string name="descripcion">Descripción</string>
+    <string name="characters">255 caracteres máximo</string>
+    <string name="Level">Nivel</string>
 </resources>

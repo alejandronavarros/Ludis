@@ -65,6 +65,17 @@
         <item>Grass Hockey</item>
         <item>Roller Hockey</item>
     </string-array>
+    <string-array name="placeholder">
+        <item>PlaceHolder</item>
+    </string-array>
     <string name="title_activity_maps" translatable="false">MapsActivity</string>
     <string name="confirm">Confirm</string>
+    <string name="price">Price</string>
+    <string name="Date">Date</string>
+    <string name="Time">Time</string>
+    <string name="Players">Players</string>
+    <string name="location">Location</string>
+    <string name="descripcion">Description</string>
+    <string name="characters">Max 255 characters</string>
+    <string name="Level">Level</string>
 </resources>

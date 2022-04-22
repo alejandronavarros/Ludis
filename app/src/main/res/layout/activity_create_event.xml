@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:isScrollContainer="true"
+    tools:context=".ActivityCreateEvent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#60AA9B">
+
+        <TextView
+            android:id="@+id/textCathegory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ssport"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/spinner"
+            app:layout_constraintEnd_toEndOf="@+id/spinner"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/spinner" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="72dp"
+            android:background="@color/white"
+            android:entries="@array/placeholder"
+            android:spinnerMode="dropdown"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.138" />
+
+        <EditText
+            android:id="@+id/rEventDate"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp"
+            android:background="@drawable/edittextround"
+            android:clickable="true"
+            android:ems="10"
+            android:focusable="false"
+            android:inputType="date"
+            android:maxLines="1"
+            android:textColor="#5c5f61"
+            app:layout_constraintEnd_toEndOf="@+id/spinner"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/spinner"
+            app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+        <EditText
+            android:id="@+id/editTextTime"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:background="@drawable/edittextround"
+            android:clickable="true"
+            android:ems="10"
+            android:focusable="false"
+            android:maxLines="1"
+            android:textColor="#5c5f61"
+            app:layout_constraintStart_toEndOf="@+id/rEventDate"
+            app:layout_constraintTop_toTopOf="@+id/rEventDate" />
+
+        <EditText
+            android:id="@+id/editPrecio"
+            android:layout_width="37dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittextround"
+            android:ems="10"
+            android:inputType="number"
+            android:textColor="#5c5f61"
+            app:layout_constraintBottom_toBottomOf="@+id/editJugadores"
+            app:layout_constraintStart_toStartOf="@+id/editTextTime"
+            app:layout_constraintTop_toTopOf="@+id/editJugadores" />
+
+        <EditText
+            android:id="@+id/editJugadores"
+            android:layout_width="49dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp"
+            android:background="@drawable/edittextround"
+            android:ems="10"
+            android:inputType="number"
+            android:textColor="#5c5f61"
+            app:layout_constraintStart_toStartOf="@+id/rEventDate"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTime" />
+
+        <TextView
+            android:id="@+id/textFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Date"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/rEventDate"
+            app:layout_constraintStart_toStartOf="@+id/rEventDate" />
+
+        <TextView
+            android:id="@+id/textHora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Time"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/editTextTime"
+            app:layout_constraintStart_toStartOf="@+id/editTextTime" />
+
+        <TextView
+            android:id="@+id/textPlayers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Players"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/editJugadores"
+            app:layout_constraintStart_toStartOf="@+id/editJugadores" />
+
+        <TextView
+            android:id="@+id/textPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/price"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/editPrecio"
+            app:layout_constraintStart_toStartOf="@+id/editPrecio" />
+
+        <EditText
+            android:id="@+id/editDescripcion"
+            android:layout_width="212dp"
+            android:layout_height="92dp"
+            android:layout_marginTop="76dp"
+            android:background="@drawable/edittextround"
+            android:clickable="true"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:maxLength="255"
+            android:textColor="#5c5f61"
+            app:layout_constraintEnd_toEndOf="@+id/editLugar"
+            app:layout_constraintHorizontal_bias="0.512"
+            app:layout_constraintStart_toStartOf="@+id/editLugar"
+            app:layout_constraintTop_toTopOf="@+id/editLugar" />
+
+        <EditText
+            android:id="@+id/editLugar"
+            android:layout_width="259dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/edittextround"
+            android:ems="10"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:inputType="textPersonName"
+            android:textColor="#5c5f61"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editJugadores" />
+
+        <TextView
+            android:id="@+id/textLocalizacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/location"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/editLugar"
+            app:layout_constraintStart_toStartOf="@+id/editLugar" />
+
+        <ImageView
+            android:id="@+id/imageGoogle"
+            android:layout_width="43dp"
+            android:layout_height="52dp"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="@+id/editLugar"
+            app:layout_constraintStart_toEndOf="@+id/editLugar"
+            app:layout_constraintTop_toTopOf="@+id/editLugar"
+            app:layout_constraintVertical_bias="0.566"
+            app:srcCompat="@drawable/mapas_de_google" />
+
+        <TextView
+            android:id="@+id/TextDescripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="106dp"
+            android:text="@string/descripcion"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/editDescripcion"
+            app:layout_constraintEnd_toEndOf="@+id/editDescripcion"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editDescripcion" />
+
+        <TextView
+            android:id="@+id/textCaracteres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/characters"
+            app:layout_constraintBottom_toBottomOf="@+id/editDescripcion"
+            app:layout_constraintEnd_toEndOf="@+id/editDescripcion"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/editDescripcion"
+            app:layout_constraintTop_toTopOf="@+id/editDescripcion"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <SeekBar
+            android:id="@+id/nivelPartido"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="212dp"
+            android:layout_height="21dp"
+            android:layout_marginTop="52dp"
+            android:max="9"
+            android:progress="9"
+            app:layout_constraintEnd_toEndOf="@+id/editDescripcion"
+            app:layout_constraintStart_toStartOf="@+id/editDescripcion"
+            app:layout_constraintTop_toBottomOf="@+id/editDescripcion" />
+
+        <TextView
+            android:id="@+id/textNivel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Level"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/nivelPartido"
+            app:layout_constraintStart_toStartOf="@+id/nivelPartido" />
+
+        <Button
+            android:id="@+id/buttonCreate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="42dp"
+            android:text="@string/create"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nivelPartido" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
